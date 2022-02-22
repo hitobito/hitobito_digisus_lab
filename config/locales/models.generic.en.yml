@@ -1,0 +1,115 @@
+#  Copyright (c) 2012-2013, Puzzle ITC GmbH. This file is part of
+#  hitobito_generic and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_generic.
+
+en:
+  activerecord:
+    models:
+      group/top_layer: association
+      group/region:
+        one: "region"
+        other: "regions"
+      group/local:
+        one: "local group"
+        other: "local groups"
+      group/board:
+        one: board
+        other: boards
+      group/contacts:
+        one: contacts
+        other: contacts
+      group/members:
+        one: members
+        other: members
+      group/office:
+        one: office
+        other: offices
+      group/committee:
+        one: "Committee"
+        other: "Committees"
+      group/top_layer/administrator: administrator
+      group/top_layer/finance_manager: invoice administrator
+      group/ch_open_members: CH Open members
+      group/tcbe_ch_members: Digital Impact Network members
+
+      role/contact: contact
+      role/committee_leader: leader
+      role/committee_member: member
+      role/active_member: active member
+      role/passive_member: passive member
+      role/office_manager: leader
+      role/office_staff: member
+      role/leader: leader
+      role/board_president: president
+      role/board_vice_president: vice-president
+      role/board_secretary: secretary
+      role/board_member: member
+
+      role/e_mail_distribution: e-mail distribution
+      role/invoice_contact: invoice contact
+      role/mailing: mailing
+      role/main_contact: main contact
+
+      role/customer: Customer
+      role/chapter_admin: Chapter-Admin
+      role/core_team: Core team
+      role/external_provider: External Provider
+
+
+      role/parldigi_more: Weitere
+
+      role/student: CAS Student
+      role/abgesagt: Abgesagt
+      role/angemeldet: Angemeldet
+      role/interessiert: Interessiert
+      role/kaltakquise: Kaltakquise
+      role/reserviert: Reserviert
+      role/storniert: Storniert
+
+      role/not_passed2019: 2019 - Nicht bestanden
+      role/not_passed2020: 2020 - Nicht bestanden
+      role/not_passed2021: 2021 - Nicht bestanden
+      role/passed2019: 2019 - Bestanden
+      role/passed2020: 2020 - Bestanden
+      role/passed2021: 2021 - Bestanden
+      role/visited2019: 2019 - Besucht
+      role/visited2020: 2020 - Besucht
+      role/visited2021: 2021 - Besucht
+
+
+    attributes:
+      group:
+        chOpenMemberType: CH Open member type
+        chOpenMemberTypes:
+          sponsor: Sponsor
+          collective: Collective
+          individual: Individual member
+          training: In training
+          honorary_member: Honorary member
+        tcbeMemberType: Digital Impact Network type
+        tcbeMemberType_label: Digital Impact Network member type
+        tcbeMemberTypes:
+          up: Up to 25 employees
+          to: 25-100 employees
+          more_than: More than 100 employees
+          individual: Individual member
+          training: In training
+          honorary_member: Honorary member
+        tcbeCompanyType: Digital Impact Network company type
+        tcbeCompanyType_label: Digital Impact Network company type
+        tcbeCompanyTypes:
+          provider: Provider
+          user: User
+        employees: Angestellte
+        apprentice: Apprentices
+        apprentice_label: Apprentices
+        apprentices:
+          "true": 'Yes'
+          "false": 'No'
+          _nil: ''
+        membershipfee: Mitgliedsbeitrag
+        invoicenumber: Rechnungs-Stammnummer
+        entrydate: Eintrittsdatum
+        leavingdate: Austrittsdatum
+

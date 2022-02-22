@@ -1,0 +1,5 @@
+= render_attrs(entry, :chOpenMemberType_label) unless (entry[:chOpenMemberType]).blank?
+= render_attrs(entry, :tcbeMemberType_label) unless (entry[:tcbeMemberType]).blank?
+= render_attrs(entry, :tcbeCompanyType_label) unless (entry[:tcbeCompanyType]).blank?
+
+=render_present_attrs(entry,:membershipfee, :invoicenumber, :entrydate, :leavingdate, :apprentice_label)

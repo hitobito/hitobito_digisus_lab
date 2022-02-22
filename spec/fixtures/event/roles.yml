@@ -1,0 +1,20 @@
+#  Copyright (c) 2012-2013, Puzzle ITC GmbH. This file is part of
+#  hitobito_generic and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_generic.
+
+top_leader:
+  participation: top_leader
+  type: Event::Role::Leader
+
+top_tn:
+  participation: top_participant
+  type: Event::Course::Role::Participant
+
+camp_leader:
+  participation: camp_leader
+  type: Event::Role::Leader
+
+camp_tn:
+  participation: camp_participant
+  type: Event::Role::Participant

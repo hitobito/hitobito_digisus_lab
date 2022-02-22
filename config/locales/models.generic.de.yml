@@ -1,0 +1,196 @@
+#  Copyright (c) 2012-2013, Puzzle ITC GmbH. This file is part of
+#  hitobito_generic and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_generic.
+
+de:
+  global:
+    associations:
+      add: Hinzufügen
+
+  activerecord:
+    models:
+      group/top_layer: Hauptebene
+      group/cas_module: CAS Modul
+      group/survey: Umfrage
+      group/region:
+        one: "Region/Kanton"
+        other: "Regionen/Kantonen"
+      group/local:
+        one: "Spezialgruppe"
+        other: "Spezialgruppen"
+      group/board:
+        one: Vorstand
+        other: Vorstände
+      group/contacts:
+        one: Kontakte
+        other: Kontakte
+      group/courses:
+        one: Vorlesung
+        other: Vorlesungen
+      group/students:
+        one: CAS Studenten
+        other: CAS Studenten
+      group/members:
+        one: Mitglieder
+        other: Mitglieder
+      group/office:
+        one: Geschäftsstelle
+        other: Geschäftsstellen
+      group/occasions:
+        one: Event
+        other: Events
+      group/parldigis:
+        one: Parldigi
+        other: Parldigi
+      group/committee:
+        one: "Gremium/Projektgruppe"
+        other: "Gremien/Projektgruppen"
+      group/top_layer/administrator: Administrator
+      group/local/main_leader: Hauptleitung
+      group/local/address_manager: Adressverwaltung
+      group/local/finance_manager: Rechnungsverwaltung
+      group/final_thesis:
+        one: Abschlussarbeiten
+        other: Abschlussarbeiten
+      group/ch_open_members: CH Open Mitglieder
+      group/tcbe_ch_members: Digital Impact Network Mitglieder
+
+
+      role/contact: Kontakt
+      role/idiot: Idiot
+      role/committee_leader: Leitung
+      role/committee_member: Mitglied
+      role/active_member: Aktivmitglied
+      role/passive_member: Passivmitglied
+      role/office_manager: Leitung
+      role/office_staff: Mitglied
+      role/leader: Leitung
+      role/board_president: Präsident
+      role/board_vice_president: Vizepräsident
+      role/board_secretary: Sekretär(in)
+      role/board_member: Vorstandsmitglied
+
+      role/student: CAS Student
+      role/abgesagt: Abgesagt
+      role/angemeldet: Angemeldet
+      role/interessiert: Interessiert
+      role/kaltakquise: Kaltakquise
+      role/reserviert: Reserviert
+      role/storniert: Storniert
+
+      role/not_passed2019: 2019 - Nicht bestanden
+      role/not_passed2020: 2020 - Nicht bestanden
+      role/not_passed2021: 2021 - Nicht bestanden
+      role/passed2019: 2019 - Bestanden
+      role/passed2020: 2020 - Bestanden
+      role/passed2021: 2021 - Bestanden
+      role/visited2019: 2019 - Besucht
+      role/visited2020: 2020 - Besucht
+      role/visited2021: 2021 - Besucht
+
+      role/neutral: Neutral
+      role/no_answer: Keine Antwort
+      role/not_interested: Nicht interessiert
+      role/eingeladen: Eingeladen
+
+      role/course: Vorlesung
+      role/master_student: Master Student
+      role/bachelor_student: Bachelor Student
+      role/teaching_assistant: Hilfsassistent
+      role/docent: Dozent
+      role/guest_speaker: Gastreferent
+      role/uebung: Übung
+      role/data_coach: Data Coach
+
+      role/parldigi: Parldigi
+      role/parldigi_more: Parldigi - Weitere
+      role/state_council: Ständerat
+      role/national_council: Nationalrat
+      role/sponsorship: Trägerschaft
+      role/partner: Partner
+
+      role/final_thesis: Abschlussarbeiten
+      role/thesis_info_event: 0. Informationsveranstaltung teilgenommen
+      role/thesis_proseminar: 0. Proseminar teilgenommen
+      role/thesis_request: 1. Angefragt für Betreuung
+      role/thesis_first_discussion: 2. Erste Besprechung
+      role/thesis_proposal_sent: 3. Proposal geschickt
+      role/thesis_started: 4. Abschlussarbeit gestartet
+      role/thesis_draft_presentation: 5. Zwischenpräsentation gehalten
+      role/thesis_submitted: 6. Abschlussarbeit abgegeben
+      role/thesis_graded: 7. Notenmeldung erstellt
+      role/thesis_published: 8. Abschlussarbeit publiziert
+
+      role/occasion: Event
+      role/participant: Teilnehmer
+      role/speaker: Referent
+      role/moderator: Moderator
+      role/deregistered: Abgemeldet
+      role/not_present: Nicht anwesend
+      role/organisator: Organisator
+      role/assistant: Assistenz
+      role/sponsor: Sponsor
+
+      role/e_mail_distribution: E-Mail Versand
+      role/invoice_contact: Rechnungskontakt
+      role/mailing: Postversand
+      role/main_contact: Hauptkontakt
+      role/customer: Kunde
+      role/chapter_admin: Chapter-Admin
+      role/core_team: Kernteam
+      role/external_provider: Externer Dienstleister
+
+      person:
+        one: Kontakt
+        other: Kontakte
+
+    attributes:
+      person:
+        title: Titel
+        salutation: Anrede
+        salutation_label: Anrede
+        salutations:
+          du_m: Lieber
+          du_w: Liebe
+          sie_m: Sehr geehrter Herr
+          sie_w: Sehr geehrte Frau
+          _nil: ""
+        social_accounts: Weblinks
+        department: Amt/Abteilung/Bereich
+        position: Funktion/Position
+        company_name: Organis.-Name
+        company: Kontakt:Organisation?
+      group:
+        chOpenMemberType: CH Open Mitgliedstyp
+        chOpenMemberType_label: CH Open Mitgliedstyp
+        chOpenMemberTypes:
+          sponsor: Sponsor
+          collective: Kollektiv
+          individual: Einzelmitglied
+          training: In Ausbildung
+          honorary_member: Ehrenmitglied
+        tcbeMemberType: Digital Impact Network
+        tcbeMemberTypes:
+          up: Bis 25 Mitarbeitende
+          to: 25-100 Mitarbeitende
+          more_than: Mehr als 100 Mitarbeitende
+          individual: Einzelmitglied
+          training: In Ausbildung
+          honorary_member: Ehrenmitglied
+        tcbeCompanyType: Digital Impact Network Firmenmitgliedsart
+        tcbeCompanyType_label: Digital Impact Network Firmenmitgliedsart
+        tcbeCompanyTypes:
+          provider: Anbieter
+          user: Anwender
+        employees: Angestellte
+        apprentice: Lehrlinge
+        apprentice_label: Lehrlinge
+        apprentices:
+          "true": Ja
+          "false": Nein
+          _nil: ''
+        membershipfee: Mitgliedsbeitrag (CHF)
+        invoicenumber: Rechnungs-Stammnummer
+        entrydate: Eintrittsdatum
+        leavingdate: Austrittsdatum
