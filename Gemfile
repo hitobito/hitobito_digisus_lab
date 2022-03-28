@@ -1,15 +1,13 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
-#  Copyright (c) 2012-2013, Puzzle ITC GmbH. This file is part of
+#  Copyright (c) 2021, Digisus Lab. This file is part of
 #  hitobito_generic and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_generic.
+#  https://github.com/hitobito/hitobito_digisus_lab.
 
 require File.expand_path('../app_root', __FILE__)
 
 source 'https://rubygems.org'
-
-ruby '2.5.3'
 
 # Declare your gem's dependencies in jubla_generic.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
