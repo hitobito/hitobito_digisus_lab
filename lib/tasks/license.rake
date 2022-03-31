@@ -8,9 +8,9 @@
 namespace :app do
   namespace :license do
     task :config do
-      @licenser = Licenser.new('hitobito_generic',
-                               'Puzzle ITC GmbH',
-                               'https://github.com/hitobito/hitobito_generic')
+      @licenser = Licenser.new('hitobito_digisus_lab',
+                               'Berner Fachhochschule',
+                               'https://github.com/hitobito/hitobito_digisus_lab')
     end
   end
 end

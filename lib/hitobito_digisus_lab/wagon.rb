@@ -5,7 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_generic.
 
-module HitobitoGeneric
+module HitobitoDigisusLab
   class Wagon < Rails::Engine
     include Wagons::Wagon
 
@@ -33,7 +33,7 @@ module HitobitoGeneric
       GroupSerializer.send :include, Iwi::GroupSerializer
     end
 
-    initializer 'hitobito_generic.add_settings' do |_app|
+    initializer 'hitobito_digisus_lab.add_settings' do |_app|
       Settings.add_source!(File.join(paths['config'].existent, 'settings.yml'))
       Settings.reload!
     end

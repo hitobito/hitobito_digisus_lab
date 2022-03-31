@@ -1,13 +1,19 @@
-Hitobito Generic is created by the following people:
+Hitobito Digisus Lab is created by the following people:
 
 Code:
+  Andreas Maierhofer, Puzzle ITC
+  Carlo Beltrame, Puzzle ITC
+  Matthias Viehweger, Puzzle ITC
+  Nils Rauch, Puzzle ITC
+  Pascal Simon, Puzzle ITC
   Pascal Zumkehr, Puzzle ITC
-
-Design & Style:
-  Pierre Fritsch, Puzzle ITC
     
 With help from many libraries and frameworks including:
   Ruby on Rails
   Wagons
+  Haml
+  CanCan
+  Delayed Job
   RSpec
+  Dry Crud
   ...and many others

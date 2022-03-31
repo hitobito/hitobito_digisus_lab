@@ -5,6 +5,9 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_generic.
 
-module HitobitoGeneric
-  VERSION = '0.0.1'
+require 'wagons'
+# require 'your_wagon_dependencies'
+require 'hitobito_digisus_lab/wagon'
+
+module HitobitoDigisusLab
 end

@@ -4,7 +4,7 @@
 ENGINE_ROOT = File.expand_path('../..', __FILE__)
 
 ENV['BUNDLE_GEMFILE'] ||= File.expand_path('Gemfile', ENGINE_ROOT)
-ENGINE_PATH = File.expand_path('lib/hitobito_generic/wagon', ENGINE_ROOT)
+ENGINE_PATH = File.expand_path('lib/hitobito_digisus_lab/wagon', ENGINE_ROOT)
 
 load File.expand_path('../../app_root.rb', __FILE__)
 

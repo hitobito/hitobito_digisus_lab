@@ -7,7 +7,7 @@
 
 require Rails.root.join('db', 'seeds', 'support', 'person_seeder')
 
-class GenericPersonSeeder < PersonSeeder
+class DigisusLabPersonSeeder < PersonSeeder
 
   def amount(role_type)
     case role_type.name.demodulize
@@ -39,7 +39,7 @@ puzzlers.each do |puz|
 end
 
 
-seeder = GenericPersonSeeder.new
+seeder = DigisusLabPersonSeeder.new
 
 seeder.seed_all_roles
 
