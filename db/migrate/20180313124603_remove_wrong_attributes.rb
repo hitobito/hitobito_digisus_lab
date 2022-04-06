@@ -1,4 +1,4 @@
-class RemoveWrongAttributes < ActiveRecord::Migration
+class RemoveWrongAttributes < ActiveRecord::Migration[4.2]
   def change
     remove_column :people, :tcbeMemberType
     remove_column :people, :tcbeCompanyType

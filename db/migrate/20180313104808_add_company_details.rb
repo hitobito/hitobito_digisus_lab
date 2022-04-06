@@ -1,4 +1,4 @@
-class AddCompanyDetails < ActiveRecord::Migration
+class AddCompanyDetails < ActiveRecord::Migration[4.2]
   def change
     add_column :people, :employees, :integer
     add_column :people, :apprentices, :boolean

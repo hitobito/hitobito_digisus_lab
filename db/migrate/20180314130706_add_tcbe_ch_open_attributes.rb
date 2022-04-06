@@ -1,4 +1,4 @@
-class AddTcbeChOpenAttributes < ActiveRecord::Migration
+class AddTcbeChOpenAttributes < ActiveRecord::Migration[4.2]
   def change
     add_column :groups, :employees, :integer
     add_column :groups, :apprentices, :boolean
