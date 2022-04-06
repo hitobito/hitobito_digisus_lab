@@ -9,7 +9,6 @@ class Group::Local < Group
 
   self.layer = true
   self.event_types = [Event]
-  self.default_children = []
 
   children Group::LocalBoard, Group::LocalOffice, Group::LocalCommittee, Group::LocalMembers,
            Group::LocalContacts, Group::LocalCourses, Group::LocalOccasions, Group::LocalParldigis,

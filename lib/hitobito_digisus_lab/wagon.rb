@@ -17,20 +17,20 @@ module HitobitoDigisusLab
 
     config.to_prepare do
       # extend application classes here
-      Group.send :include, Group::Generic, Iwi::Group
-      Person.send :include, Iwi::Person
+      Group.include(Group::Generic, Iwi::Group)
+      Person.include(Iwi::Person)
 
-      PeopleController.send :include, Iwi::PeopleController
-      GroupsController.send :include, Iwi::GroupsController
+      PeopleController.include(Iwi::PeopleController)
+      GroupsController.include(Iwi::GroupsController)
 
-      Export::Tabular::People::PeopleAddress.send :include, Iwi::Export::Csv::People::PeopleAddress
-      Export::Tabular::People::PersonRow.send :include, Iwi::Export::Csv::People::PersonRow
+      Export::Tabular::People::PeopleAddress.include(Iwi::Export::Csv::People::PeopleAddress)
+      Export::Tabular::People::PersonRow.include(Iwi::Export::Csv::People::PersonRow)
 
       #::Person::PUBLIC_ATTRS += [:title, :salutation, :department, :position]
       #::Group::PUBLIC_ATTRS += [:chOpenMemberType, :tcbeMemberType, :tcbeCompanyType]
 
-      PersonSerializer.send :include, Iwi::PersonSerializer
-      GroupSerializer.send :include, Iwi::GroupSerializer
+      PersonSerializer.include(Iwi::PersonSerializer)
+      GroupSerializer.include(Iwi::GroupSerializer)
     end
 
     initializer 'hitobito_digisus_lab.add_settings' do |_app|
