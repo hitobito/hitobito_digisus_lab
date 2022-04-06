@@ -4,7 +4,7 @@ module Iwi
     extend ActiveSupport::Concern
 
     included do
-      self.permitted_attrs += [:chOpenMemberType, :tcbeMemberType, :tcbeCompanyType, :employees, :apprentice, :membershipfee, :invoicenumber, :entrydate, :leavingdate]
+      self.permitted_attrs += [:ch_open_member_type, :tcbe_member_type, :tcbe_company_type, :employees, :apprentice, :membershipfee, :invoicenumber, :entrydate, :leavingdate]
 
       #TODO: Find a way to use this method in the view
       def parent_in_ch_open_or_tcbe(group)

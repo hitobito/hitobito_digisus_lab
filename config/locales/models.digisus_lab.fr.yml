@@ -75,26 +75,26 @@ fr:
 
     attributes:
       group:
-        chOpenMemberType: CH Open membre type
-        chOpenMemberType_label: CH Open membre type
-        chOpenMemberTypes:
+        ch_open_member_type: CH Open membre type
+        ch_open_member_type_label: CH Open membre type
+        ch_open_member_types:
           sponsor: Sponsore
           collective: Collectif
           individual: Membre individuel
           training: En engseignement
           honorary_member: Membre honorifique
-        tcbeMemberType: Digital Impact Networkmembre type
-        tcbeMemberType_label: Digital Impact Network membre type
-        tcbeMemberTypes:
+        tcbe_member_type: Digital Impact Networkmembre type
+        tcbe_member_type_label: Digital Impact Network membre type
+        tcbe_member_types:
           up: Jusqu'à 25 employés
           to: 25-100 employés
           more_than: Plus que 100 employés
           individual: Membre individuel
           training: En engseignement
           honorary_member: Membre honorifique
-        tcbeCompanyType: Digital Impact Network type de compagnie
-        tcbeCompanyType_label: Digital Impact Network type de compagnie
-        tcbeCompanyTypes:
+        tcbe_company_type: Digital Impact Network type de compagnie
+        tcbe_company_type_label: Digital Impact Network type de compagnie
+        tcbe_company_types:
           provider: Distributeur
           user: Utilisateur
         employees: Employé

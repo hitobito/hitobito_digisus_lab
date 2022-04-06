@@ -10,14 +10,14 @@ module Iwi::Group
 
   included do
 
-    i18n_enum :chOpenMemberType, CHOPEN_MEMBER_TYPE
-    i18n_setter :chOpenMemberType, CHOPEN_MEMBER_TYPE
+    i18n_enum :ch_open_member_type, CHOPEN_MEMBER_TYPE
+    i18n_setter :ch_open_member_type, CHOPEN_MEMBER_TYPE
 
-    i18n_enum :tcbeMemberType, TCBE_MEMBER_TYPE
-    i18n_setter :tcbeMemberType, TCBE_MEMBER_TYPE
+    i18n_enum :tcbe_member_type, TCBE_MEMBER_TYPE
+    i18n_setter :tcbe_member_type, TCBE_MEMBER_TYPE
 
-    i18n_enum :tcbeCompanyType, TCBE_COMPANY_TYPE
-    i18n_setter :tcbeCompanyType, TCBE_COMPANY_TYPE
+    i18n_enum :tcbe_company_type, TCBE_COMPANY_TYPE
+    i18n_setter :tcbe_company_type, TCBE_COMPANY_TYPE
 
     i18n_enum :apprentice, APPRENTICE
     i18n_setter :apprentice, APPRENTICE

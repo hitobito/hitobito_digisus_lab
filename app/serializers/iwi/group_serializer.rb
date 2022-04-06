@@ -10,7 +10,7 @@ module Iwi::GroupSerializer
 
   included do
     extension(:details) do |_|
-      map_properties :chOpenMemberType, :tcbeMemberType, :tcbeCompanyType, :employees, :apprentice, :membershipfee, :invoicenumber, :entrydate, :leavingdate
+      map_properties :ch_open_member_type, :tcbe_member_type, :tcbe_company_type, :employees, :apprentice, :membershipfee, :invoicenumber, :entrydate, :leavingdate
     end
   end
 

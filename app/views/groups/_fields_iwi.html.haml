@@ -1,6 +1,6 @@
-=f.labeled_i18n_enum_field :chOpenMemberType, Group.chOpenMemberType_labels, include_blank: true if(parent_in_ch_open(@group))
-=f.labeled_i18n_enum_field :tcbeMemberType, Group.tcbeMemberType_labels, include_blank: true if(parent_in_tcbe(@group))
-=f.labeled_i18n_enum_field :tcbeCompanyType, Group.tcbeCompanyType_labels, include_blank: true if(parent_in_tcbe(@group))
+=f.labeled_i18n_enum_field :ch_open_member_type, Group.ch_open_member_type_labels, include_blank: true if(parent_in_ch_open(@group))
+=f.labeled_i18n_enum_field :tcbe_member_type, Group.tcbe_member_type_labels, include_blank: true if(parent_in_tcbe(@group))
+=f.labeled_i18n_enum_field :tcbe_company_type, Group.tcbe_company_type_labels, include_blank: true if(parent_in_tcbe(@group))
 =f.labeled_input_fields :membershipfee, :invoicenumber, :entrydate, :leavingdate if(parent_in_ch_open_or_tcbe(@group))
 
 =f.labeled_i18n_enum_field :apprentice, Group.apprentice_labels, include_blank: true if(parent_in_ch_open_or_tcbe(@group))
