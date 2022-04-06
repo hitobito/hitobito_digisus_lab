@@ -26,12 +26,13 @@ class DigisusLabPersonSeeder < PersonSeeder
 end
 
 
-puzzlers = ['Pascal Zumkehr',
-            'Pascal Simon',
-            'Pierre Fritsch',
-            'Andreas Maierhofer',
-            'Andre Kunz',
-            'Roland Studer']
+puzzlers = ['Andreas Maierhofer',
+            'Carlo Beltrame',
+            'Matthias Viehweger',
+            'Oli Brian',
+            'Nils Rauch',
+            'Pascal Zumkehr',
+            'Pascal Simon']
 devs = {'Somebody' => 'some@email.example.com'}
 
 puzzlers.each do |puz|

@@ -13,9 +13,9 @@ ch = Group.roots.first
 srand(42)
 
 unless ch.address.present?
-  ch.update_attributes(seeder.group_attributes)
+  ch.update(seeder.group_attributes)
   ch.default_children.each do |child_class|
-    child_class.first.update_attributes(seeder.group_attributes)
+    child_class.first.update(seeder.group_attributes)
   end
 end
 
@@ -48,7 +48,7 @@ states = Group::Region.seed(:name, :parent_id,
 states.each do |s|
   seeder.seed_social_accounts(s)
   board = s.children.where(type: 'Group::RegionBoard').first
-  board.update_attributes(seeder.group_attributes)
+  board.update(seeder.group_attributes)
 end
 
 

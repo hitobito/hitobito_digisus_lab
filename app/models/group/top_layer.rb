@@ -12,7 +12,8 @@ class Group::TopLayer < Group
   self.default_children = [Group::TopLayerBoard, Group::TopLayerOffice, Group::TopLayerContacts]
 
   children Group::TopLayerContacts, Group::Local, Group::TopLayerStudents, Group::TopLayerCourses,
-           Group::TopLayerParldigis, Group::TopLayerOccasions, Group::TopLayerFinalThesis
+           Group::TopLayerParldigis, Group::TopLayerOccasions, Group::TopLayerFinalThesis,
+           Group::TopLayerBoard, Group::TopLayerOffice, Group::Region
 
   class Administrator < Role
     self.permissions = [:admin, :layer_and_below_full, :finance]
