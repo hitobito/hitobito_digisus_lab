@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-#  Copyright (c) 2021, Digisus Lab. This file is part of
+#  Copyright (c) 2022, Institut IWI. This file is part of
 #  hitobito_generic and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
