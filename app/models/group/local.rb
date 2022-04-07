@@ -52,6 +52,7 @@ class Group::Local < Group
     self.permissions = []
   end
 
-  roles AddressManager, ActiveMember, MainLeader, Leader, Contact, FinanceManager, ParldigiMore, Sponsor, Eingeladen
+  roles AddressManager, ActiveMember, MainLeader, Leader, Contact,
+        FinanceManager, ParldigiMore, Sponsor, Eingeladen
 
 end

@@ -35,6 +35,8 @@ class Group::CasModule < Group
   class NotPassed2021 < Role::NotPassed2021
   end
 
-  roles Visited2019, Visited2020, Visited2021, Passed2019, Passed2020, Passed2021, NotPassed2019, NotPassed2020, NotPassed2021
+  roles Visited2019, Visited2020, Visited2021,
+        Passed2019, Passed2020, Passed2021,
+        NotPassed2019, NotPassed2020, NotPassed2021
 
 end

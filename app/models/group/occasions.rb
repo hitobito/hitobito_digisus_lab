@@ -35,6 +35,7 @@ class Group::Occasions < Group
   class Eingeladen < Role::Eingeladen
   end
 
-  roles Deregistered, GuestSpeaker, Moderator, NotPresent, Organisator, Speaker, Participant, Sponsor, Eingeladen
+  roles Deregistered, GuestSpeaker, Moderator, NotPresent,
+        Organisator, Speaker, Participant, Sponsor, Eingeladen
 
 end
