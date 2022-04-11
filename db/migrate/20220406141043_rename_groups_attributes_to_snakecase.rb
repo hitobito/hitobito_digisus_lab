@@ -11,5 +11,7 @@ class RenameGroupsAttributesToSnakecase < ActiveRecord::Migration[6.1]
     rename_column :groups, :chOpenMemberType, :ch_open_member_type
     rename_column :groups, :tcbeMemberType, :tcbe_member_type
     rename_column :groups, :tcbeCompanyType, :tcbe_company_type
+
+    Group.reset_column_information
   end
 end
