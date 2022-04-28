@@ -153,3 +153,5 @@ This hitobito wagon defines the organization hierarchy with groups and roles of 
     - 6. Abschlussarbeit abgegeben: []
     - 7. Notenmeldung erstellt: []
     - 8. Abschlussarbeit publiziert: []
+    
+(Output of rake hitobito:permissions)
