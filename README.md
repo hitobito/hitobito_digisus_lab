@@ -1,13 +1,157 @@
 # Hitobito digisus_lab
 
-
 This hitobito wagon defines the organization hierarchy with groups and roles of digisus_lab.
-
 
 ## Organization Hierarchy
 
-todo: Please update
-
-
-
+- Hauptebene
+  - Hauptebene
+    - Administrator: [:admin, :layer_and_below_full, :finance]
+  - CAS Studenten
+    - CAS Student: []
+  - Vorlesung
+    - Vorlesung: []
+  - Parldigi
+    - Parldigi: []
+    - Parldigi - Weitere: []
+  - Event
+    - Event: []
+  - Abschlussarbeiten
+    - Abschlussarbeiten: []
+  - Vorstand
+    - Vorstandsmitglied: [:layer_full, :contact_data]
+    - Präsident: [:layer_full, :contact_data]
+    - Sekretär(in): [:layer_full, :contact_data]
+    - Vizepräsident: [:layer_full, :contact_data]
+  - Geschäftsstelle
+    - Leitung: [:layer_and_below_full, :admin, :contact_data, :approve_applications]
+    - Mitglied: [:layer_and_below_full, :contact_data, :approve_applications]
+- Spezialgruppe
+  - Spezialgruppe
+    - Adressverwaltung: [:layer_and_below_full]
+    - Aktivmitglied: [:layer_and_below_full]
+    - Hauptleitung: [:layer_and_below_full]
+    - Leitung: [:group_and_below_full, :contact_data]
+    - Kontakt: [:layer_and_below_full]
+    - Rechnungsverwaltung: [:layer_and_below_full, :finance]
+    - Parldigi - Weitere: []
+    - Sponsor: []
+    - Eingeladen: []
+  - Vorstand
+    - Vorstandsmitglied: [:layer_full, :contact_data]
+    - Präsident: [:layer_full, :contact_data]
+    - Sekretär(in): [:layer_full, :contact_data]
+    - Vizepräsident: [:layer_full, :contact_data]
+  - Geschäftsstelle
+    - Leitung: [:layer_and_below_full, :admin, :contact_data, :approve_applications]
+    - Mitglied: [:layer_and_below_full, :contact_data, :approve_applications]
+  - Mitglieder
+    - Aktivmitglied: [:group_and_below_read]
+    - Leitung: [:group_and_below_full, :contact_data]
+    - Passivmitglied: []
+  - Kontakte
+    - Kontakt: []
+  - Vorlesung
+    - Vorlesung: []
+  - Event
+    - Event: []
+  - Parldigi
+    - Parldigi: []
+  - Abschlussarbeiten
+    - Abschlussarbeiten: []
+  - CAS Studenten
+    - CAS Student: []
+  - CH Open Mitglieder
+    - E-Mail Versand: []
+    - Rechnungskontakt: []
+    - Hauptkontakt: []
+    - Postversand: []
+  - Digital Impact Network Mitglieder
+    - E-Mail Versand: []
+    - Rechnungskontakt: []
+    - Hauptkontakt: []
+    - Postversand: []
+    - Chapter-Admin: [:group_and_below_read]
+  - Gremium/Projektgruppe
+    - Leitung: [:group_and_below_full, :contact_data]
+    - Mitglied: [:group_and_below_read, :contact_data]
+- Region/Kanton
+  - Vorstand
+    - Vorstandsmitglied: [:layer_full, :contact_data]
+    - Präsident: [:layer_full, :contact_data]
+    - Sekretär(in): [:layer_full, :contact_data]
+    - Vizepräsident: [:layer_full, :contact_data]
+  - Geschäftsstelle
+    - Leitung: [:layer_and_below_full, :admin, :contact_data, :approve_applications]
+    - Mitglied: [:layer_and_below_full, :contact_data, :approve_applications]
+  - Gremium/Projektgruppe
+    - Leitung: [:group_and_below_full, :contact_data]
+    - Mitglied: [:group_and_below_read, :contact_data]
+  - Mitglieder
+    - Aktivmitglied: []
+    - Passivmitglied: []
+  - Kontakte
+    - Kontakt: []
+  - CAS Studenten
+    - CAS Student: []
+- Global
+  - Kontakte
+    - Kontakt: []
+  - CAS Modul
+    - 2019 - Besucht: []
+    - 2020 - Besucht: []
+    - 2021 - Besucht: []
+    - 2019 - Bestanden: []
+    - 2020 - Bestanden: []
+    - 2021 - Bestanden: []
+    - 2019 - Nicht bestanden: []
+    - 2020 - Nicht bestanden: []
+    - 2021 - Nicht bestanden: []
+  - Umfrage
+    - Neutral: []
+    - Keine Antwort: []
+    - Nicht interessiert: []
+    - Interessiert: []
+  - Global
+    - Hauptkontakt: []
+    - Kernteam: []
+    - Kunde: []
+    - Externer Dienstleister: []
+    - Abgesagt: []
+    - Angemeldet: []
+    - Interessiert: []
+    - Kaltakquise: []
+    - Reserviert: []
+    - Storniert: []
+    - Bachelor Student: []
+    - Dozent: []
+    - Gastreferent: []
+    - Hilfsassistent: []
+    - Master Student: []
+    - Übung: []
+    - Data Coach: []
+    - Abgemeldet: []
+    - Gastreferent: []
+    - Moderator: []
+    - Nicht anwesend: []
+    - Organisator: []
+    - Referent: []
+    - Teilnehmer: []
+    - Sponsor: []
+    - Eingeladen: []
+    - Nationalrat: []
+    - Partner: []
+    - Ständerat: []
+    - Trägerschaft: []
+    - 0. Informationsveranstaltung teilgenommen: []
+    - 0. Proseminar teilgenommen: []
+    - 1. Angefragt für Betreuung: []
+    - 2. Erste Besprechung: []
+    - 3. Proposal geschickt: []
+    - 4. Abschlussarbeit gestartet: []
+    - 5. Zwischenpräsentation gehalten: []
+    - 6. Abschlussarbeit abgegeben: []
+    - 7. Notenmeldung erstellt: []
+    - 8. Abschlussarbeit publiziert: []
+    
 (Output of rake hitobito:permissions)

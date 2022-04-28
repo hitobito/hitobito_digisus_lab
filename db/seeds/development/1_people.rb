@@ -1,13 +1,14 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
-#  Copyright (c) 2012-2013, Puzzle ITC GmbH. This file is part of
-#  hitobito_generic and licensed under the Affero General Public License version 3
+#  Copyright (c) 2012-2022, Berner Fachhochschule. This file is part of
+#  hitobito_digisus_lab and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_generic.
+#  https://github.com/hitobito/hitobito_digisus_lab.
+
 
 require Rails.root.join('db', 'seeds', 'support', 'person_seeder')
 
-class GenericPersonSeeder < PersonSeeder
+class DigisusLabPersonSeeder < PersonSeeder
 
   def amount(role_type)
     case role_type.name.demodulize
@@ -26,12 +27,13 @@ class GenericPersonSeeder < PersonSeeder
 end
 
 
-puzzlers = ['Pascal Zumkehr',
-            'Pascal Simon',
-            'Pierre Fritsch',
-            'Andreas Maierhofer',
-            'Andre Kunz',
-            'Roland Studer']
+puzzlers = ['Andreas Maierhofer',
+            'Carlo Beltrame',
+            'Matthias Viehweger',
+            'Oli Brian',
+            'Nils Rauch',
+            'Pascal Zumkehr',
+            'Pascal Simon']
 devs = {'Somebody' => 'some@email.example.com'}
 
 puzzlers.each do |puz|
@@ -39,7 +41,7 @@ puzzlers.each do |puz|
 end
 
 
-seeder = GenericPersonSeeder.new
+seeder = DigisusLabPersonSeeder.new
 
 seeder.seed_all_roles
 

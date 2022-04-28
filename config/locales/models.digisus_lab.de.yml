@@ -1,7 +1,8 @@
-#  Copyright (c) 2012-2013, Puzzle ITC GmbH. This file is part of
-#  hitobito_generic and licensed under the Affero General Public License version 3
+#  Copyright (c) 2012-2022, Berner Fachhochschule. This file is part of
+#  hitobito_digisus_lab and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_generic.
+#  https://github.com/hitobito/hitobito_digisus_lab.
+
 
 de:
   global:
@@ -162,25 +163,25 @@ de:
         company_name: Organis.-Name
         company: Kontakt:Organisation?
       group:
-        chOpenMemberType: CH Open Mitgliedstyp
-        chOpenMemberType_label: CH Open Mitgliedstyp
-        chOpenMemberTypes:
+        ch_open_member_type: CH Open Mitgliedstyp
+        ch_open_member_type_label: CH Open Mitgliedstyp
+        ch_open_member_types:
           sponsor: Sponsor
           collective: Kollektiv
           individual: Einzelmitglied
           training: In Ausbildung
           honorary_member: Ehrenmitglied
-        tcbeMemberType: Digital Impact Network
-        tcbeMemberTypes:
+        tcbe_member_type: Digital Impact Network
+        tcbe_member_types:
           up: Bis 25 Mitarbeitende
           to: 25-100 Mitarbeitende
           more_than: Mehr als 100 Mitarbeitende
           individual: Einzelmitglied
           training: In Ausbildung
           honorary_member: Ehrenmitglied
-        tcbeCompanyType: Digital Impact Network Firmenmitgliedsart
-        tcbeCompanyType_label: Digital Impact Network Firmenmitgliedsart
-        tcbeCompanyTypes:
+        tcbe_company_type: Digital Impact Network Firmenmitgliedsart
+        tcbe_company_type_label: Digital Impact Network Firmenmitgliedsart
+        tcbe_company_types:
           provider: Anbieter
           user: Anwender
         employees: Angestellte

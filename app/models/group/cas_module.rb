@@ -1,9 +1,10 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
-#  Copyright (c) 2012-2013, Puzzle ITC GmbH. This file is part of
-#  hitobito_generic and licensed under the Affero General Public License version 3
+#  Copyright (c) 2012-2022, Berner Fachhochschule. This file is part of
+#  hitobito_digisus_lab and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_generic.
+#  https://github.com/hitobito/hitobito_digisus_lab.
+
 
 class Group::CasModule < Group
 
@@ -34,6 +35,8 @@ class Group::CasModule < Group
   class NotPassed2021 < Role::NotPassed2021
   end
 
-  roles Visited2019, Visited2020, Visited2021, Passed2019, Passed2020, Passed2021, NotPassed2019, NotPassed2020, NotPassed2021
+  roles Visited2019, Visited2020, Visited2021,
+        Passed2019, Passed2020, Passed2021,
+        NotPassed2019, NotPassed2020, NotPassed2021
 
 end

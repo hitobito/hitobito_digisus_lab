@@ -1,9 +1,10 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
-#  Copyright (c) 2012-2013, Puzzle ITC GmbH. This file is part of
-#  hitobito_generic and licensed under the Affero General Public License version 3
+#  Copyright (c) 2012-2022, Berner Fachhochschule. This file is part of
+#  hitobito_digisus_lab and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
-#  https://github.com/hitobito/hitobito_generic.
+#  https://github.com/hitobito/hitobito_digisus_lab.
+
 
 require Rails.root.join('db', 'seeds', 'support', 'group_seeder')
 
@@ -13,9 +14,9 @@ ch = Group.roots.first
 srand(42)
 
 unless ch.address.present?
-  ch.update_attributes(seeder.group_attributes)
+  ch.update(seeder.group_attributes)
   ch.default_children.each do |child_class|
-    child_class.first.update_attributes(seeder.group_attributes)
+    child_class.first.update(seeder.group_attributes)
   end
 end
 
@@ -48,7 +49,7 @@ states = Group::Region.seed(:name, :parent_id,
 states.each do |s|
   seeder.seed_social_accounts(s)
   board = s.children.where(type: 'Group::RegionBoard').first
-  board.update_attributes(seeder.group_attributes)
+  board.update(seeder.group_attributes)
 end
 
 
