@@ -23,7 +23,7 @@
         = l(note.created_at, :format => "%A, %e. %B %Y - %R")
         - if can?(:destroy, note)
           = link_to icon(:trash),
-                  note_path(@group, note),
+                  note_path(note, @group.id),
                   method: :delete,
                   remote: true,
                   data: { confirm: ti(:confirm_delete) }
