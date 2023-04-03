@@ -25,7 +25,8 @@ describe 'Export::Csv::People' do
 
     let(:list) { Person.where(id: person) }
     let(:data) { Export::Tabular::People::PeopleAddress.export(:csv, list) }
-    let(:csv)  { CSV.parse(data, headers: true, col_sep: Settings.csv.separator) }
+    let(:data_without_bom) { data.gsub(Regexp.new("^#{Export::Csv::UTF8_BOM}"), '') }
+    let(:csv)  { CSV.parse(data_without_bom, headers: true, col_sep: Settings.csv.separator) }
 
     subject { csv }
 
