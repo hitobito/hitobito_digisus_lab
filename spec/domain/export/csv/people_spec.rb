@@ -20,7 +20,7 @@ describe 'Export::Csv::People' do
     let(:simple_headers) do
       ["Vorname", "Nachname", "Übername", "Organis.-Name", "Kontakt:Organisation?",
        "Haupt-E-Mail", "Adresse", "PLZ", "Ort", "Land",
-       "Hauptebene", "Rollen", "Tags", "Titel", "Anrede", "Amt/Abteilung/Bereich", "Funktion/Position"]
+       "Hauptebene", "Rollen", "Titel", "Anrede", "Amt/Abteilung/Bereich", "Funktion/Position"]
     end
 
     let(:list) { Person.where(id: person) }
