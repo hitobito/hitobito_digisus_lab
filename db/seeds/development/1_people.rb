@@ -17,13 +17,6 @@ class DigisusLabPersonSeeder < PersonSeeder
     else 1
     end
   end
-
-  def seed_demo_person(email, group, role_type)
-    attrs = person_attributes(role_type).merge(email: email)
-    p = Person.seed(:email, attrs).first
-    seed_accounts(p, false)
-    seed_role(p, group, role_type)
-  end
 end
 
 
@@ -49,8 +42,3 @@ root = Group.root
 devs.each do |name, email|
   seeder.seed_developer(name, email, root, Group::TopLayer::Administrator)
 end
-
-seeder.encrypted_password = BCrypt::Password.create("demo", cost: 1)
-seeder.seed_demo_person('admin@hitobito.ch', root, Group::TopLayer::Administrator)
-seeder.seed_demo_person('leitung@hitobito.ch', Group.find_by_name('Region Bern'), Group::Local::MainLeader)
-seeder.seed_demo_person('mitglied@hitobito.ch', Group.find_by_name('Verein Bern Stadt'), Group::Local::ActiveMember)
