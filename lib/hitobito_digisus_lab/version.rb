@@ -7,5 +7,5 @@
 
 
 module HitobitoDigisusLab
-  VERSION = '1.28.20'
+  VERSION = '1.30.0'
 end
