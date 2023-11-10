@@ -5,4 +5,4 @@
 
 
 = f.labeled_input_fields :title, :department, :position
-= f.labeled_i18n_enum_field :salutation, Person.salutation_labels, include_blank: true
+= f.labeled_i18n_enum_field :salutation, Person.salutation_labels, include_blank: "", class: 'form-select form-select-sm'
