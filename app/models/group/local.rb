@@ -5,17 +5,14 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::Local < Group
-
   self.layer = true
   self.event_types = [Event]
 
   children Group::LocalBoard, Group::LocalOffice, Group::LocalCommittee, Group::LocalMembers,
-           Group::LocalContacts, Group::LocalCourses, Group::LocalOccasions, Group::LocalParldigis,
-           Group::LocalFinalThesis, Group::LocalStudents, Group::TopLayerChOpenMembers,
-           Group::TopLayerTcbeChMembers
-
+    Group::LocalContacts, Group::LocalCourses, Group::LocalOccasions, Group::LocalParldigis,
+    Group::LocalFinalThesis, Group::LocalStudents, Group::TopLayerChOpenMembers,
+    Group::TopLayerTcbeChMembers
 
   class MainLeader < Role
     self.permissions = [:layer_and_below_full]
@@ -29,15 +26,15 @@ class Group::Local < Group
   end
 
   class ActiveMember < Role::ActiveMember
-    self.permissions =  [:layer_and_below_full]
+    self.permissions = [:layer_and_below_full]
   end
 
   class Contact < Role::Contact
-    self.permissions =  [:layer_and_below_full]
+    self.permissions = [:layer_and_below_full]
   end
 
   class FinanceManager < Role
-    self.permissions = [:layer_and_below_full, :finance]
+    self.permissions = %i[layer_and_below_full finance]
   end
 
   class ParldigiMore < Role::ParldigiMore
@@ -53,6 +50,5 @@ class Group::Local < Group
   end
 
   roles AddressManager, ActiveMember, MainLeader, Leader, Contact,
-        FinanceManager, ParldigiMore, Sponsor, Eingeladen
-
+    FinanceManager, ParldigiMore, Sponsor, Eingeladen
 end

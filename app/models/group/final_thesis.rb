@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::FinalThesis < Group
-
   class ThesisInfoEvent < Role::ThesisInfoEvent
   end
 
@@ -39,18 +37,16 @@ class Group::FinalThesis < Group
   end
 
   roles ThesisInfoEvent, ThesisProseminar, ThesisRequest, ThesisFirstDiscussion, ThesisProposalSent,
-        ThesisStarted, ThesisDraftPresentation, ThesisSubmitted, ThesisGraded, ThesisPublished
-
-
+    ThesisStarted, ThesisDraftPresentation, ThesisSubmitted, ThesisGraded, ThesisPublished
 end
 
-#0. Informationsveranstaltung teilgenommen
-#0. Proseminar teilgenommen
-#1. Angefragt für Betreuung
-#2. Erste Besprechung
-#3. Proposal geschickt
-#4. Abschlussarbeit gestartet
-#5. Zwischenpräsentation gehalten
-#6. Abschlussarbeit abgegeben
-#7. Notenmeldung erstellt
-#8. Abschlussarbeit publiziert
+# 0. Informationsveranstaltung teilgenommen
+# 0. Proseminar teilgenommen
+# 1. Angefragt für Betreuung
+# 2. Erste Besprechung
+# 3. Proposal geschickt
+# 4. Abschlussarbeit gestartet
+# 5. Zwischenpräsentation gehalten
+# 6. Abschlussarbeit abgegeben
+# 7. Notenmeldung erstellt
+# 8. Abschlussarbeit publiziert

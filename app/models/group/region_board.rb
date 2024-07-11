@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::RegionBoard < Group::Board
   class President < Role::BoardPresident
   end
@@ -20,5 +19,4 @@ class Group::RegionBoard < Group::Board
   end
 
   roles Member, President, Secretary, VicePresident
-
 end

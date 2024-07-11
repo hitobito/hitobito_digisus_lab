@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::Parldigis < Group
-
   class NationalCouncil < Role::NationalCouncil
   end
 
@@ -20,7 +18,5 @@ class Group::Parldigis < Group
   class Partner < Role::Partner
   end
 
-
   roles NationalCouncil, Partner, StateCouncil, Sponsorship
-
 end

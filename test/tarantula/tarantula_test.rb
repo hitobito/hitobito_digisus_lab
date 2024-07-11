@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 require 'test_helper'
 require 'relevance/tarantula'
 require 'tarantula/tarantula_config'
@@ -16,7 +15,7 @@ class TarantulaTest < ActionDispatch::IntegrationTest
   # every page.  For many applications, you can load a decent data set by
   # loading all fixtures.
 
-  reset_fixture_path File.expand_path('../../../spec/fixtures', __FILE__)
+  reset_fixture_path File.expand_path('../../spec/fixtures', __dir__)
 
   include TarantulaConfig
 
@@ -40,8 +39,7 @@ class TarantulaTest < ActionDispatch::IntegrationTest
     configure_urls_without_generic(t, person)
 
     # do not update any role to avoid loosing access to them.
-    t.skip_uri_patterns << /groups\/\d+\/roles\/\d+$/
+    t.skip_uri_patterns << %r{groups/\d+/roles/\d+$}
   end
   alias_method_chain :configure_urls, :generic
-
 end

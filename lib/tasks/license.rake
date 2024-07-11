@@ -5,13 +5,12 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 namespace :app do
   namespace :license do
     task :config do
-      @licenser = Licenser.new('hitobito_digisus_lab',
-                               'Berner Fachhochschule',
-                               'https://github.com/hitobito/hitobito_digisus_lab')
+      @licenser = Licenser.new("hitobito_digisus_lab",
+        "Berner Fachhochschule",
+        "https://github.com/hitobito/hitobito_digisus_lab")
     end
   end
 end

@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::Survey < Group
-
   class Neutral < Role::Neutral
   end
 
@@ -21,6 +19,4 @@ class Group::Survey < Group
   end
 
   roles Neutral, NoAnswer, NotInterested, Interessiert
-
 end
-

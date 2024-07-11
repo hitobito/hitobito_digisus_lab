@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::LocalFinalThesis < Group::FinalThesis
-
   children Group::LocalFinalThesis
 
   class FinalThesis < Role::FinalThesis
@@ -15,5 +13,4 @@ class Group::LocalFinalThesis < Group::FinalThesis
   end
 
   roles FinalThesis
-
 end

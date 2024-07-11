@@ -5,10 +5,9 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
-desc 'Crawl app with tarantula (run in wagon)'
+desc "Crawl app with tarantula (run in wagon)"
 task :tarantula do
-  sh 'rm -rf ../hitobito/tmp/tarantula'
+  sh "rm -rf ../hitobito/tmp/tarantula"
   sh 'bash -c "RAILS_ENV=test ../hitobito/bin/with_mysql ' \
      'rake app:tarantula:test -t"'
 end

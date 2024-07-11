@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::Courses < Group
-
   class MasterStudent < Role::MasterStudent
   end
 
@@ -30,5 +28,4 @@ class Group::Courses < Group
   end
 
   roles BachelorStudent, Docent, GuestSpeaker, TeachingAssistant, MasterStudent, Uebung, DataCoach
-
 end

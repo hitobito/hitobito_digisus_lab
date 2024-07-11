@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 require Rails.root.join('db', 'seeds', 'support', 'event_seeder')
 
 srand(42)
@@ -18,5 +17,3 @@ seeder.course_group_ids.each do |group_id|
     seeder.seed_event(group_id, :base)
   end
 end
-
-

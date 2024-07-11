@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 module Iwi::PersonSerializer
   extend ActiveSupport::Concern
 
@@ -14,5 +13,4 @@ module Iwi::PersonSerializer
       map_properties :title, :salutation, :department, :position
     end
   end
-
 end

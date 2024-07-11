@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::RegionMembers < Group::Members
-
   children Group::RegionMembers
 
   class ActiveMember < Role::ActiveMember

@@ -5,11 +5,9 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 require 'spec_helper'
 
 describe Group do
-
   include_examples 'group types'
 
   # # not necessary with this sctrucutre
@@ -46,6 +44,4 @@ describe Group do
       expect(subject.map(&:name)).to eq expected
     end
   end
-
-
 end

@@ -5,19 +5,18 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 module Iwi::Group
   extend ActiveSupport::Concern
 
-  include I18nEnums, I18nSettable #core group does not have this
+  include I18nSettable
+  include I18nEnums # core group does not have this
 
-  CHOPEN_MEMBER_TYPE = ['sponsor', 'collective', 'individual', 'training', 'honorary_member']
-  TCBE_MEMBER_TYPE = ['up', 'to', 'more_than', 'individual', 'training', 'honorary_member']
-  TCBE_COMPANY_TYPE = ['provider', 'user']
+  CHOPEN_MEMBER_TYPE = %w[sponsor collective individual training honorary_member]
+  TCBE_MEMBER_TYPE = %w[up to more_than individual training honorary_member]
+  TCBE_COMPANY_TYPE = %w[provider user]
   APPRENTICE = [true, false]
 
   included do
-
     i18n_enum :ch_open_member_type, CHOPEN_MEMBER_TYPE
     i18n_setter :ch_open_member_type, CHOPEN_MEMBER_TYPE
 
@@ -30,5 +29,4 @@ module Iwi::Group
     i18n_enum :apprentice, APPRENTICE
     i18n_setter :apprentice, APPRENTICE
   end
-
 end

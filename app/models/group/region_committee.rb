@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::RegionCommittee < Group::Committee
-
   children Group::RegionCommittee
 
   class Leader < Role::CommitteeLeader
@@ -17,5 +15,4 @@ class Group::RegionCommittee < Group::Committee
   end
 
   roles Leader, Member
-
 end

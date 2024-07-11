@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class RenameGroupsAttributesToSnakecase < ActiveRecord::Migration[6.1]
   def change
     rename_column :groups, :chOpenMemberType, :ch_open_member_type

@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::Students < Group
-
   class Kaltakquise < Role::Kaltakquise
   end
 
@@ -27,5 +25,4 @@ class Group::Students < Group
   end
 
   roles Abgesagt, Angemeldet, Interessiert, Kaltakquise, Reserviert, Storniert
-
 end

@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::LocalOccasions < Group::Occasions
-
   children Group::LocalOccasions
 
   class Occasion < Role::Occasion
@@ -15,5 +13,4 @@ class Group::LocalOccasions < Group::Occasions
   end
 
   roles Occasion
-
 end

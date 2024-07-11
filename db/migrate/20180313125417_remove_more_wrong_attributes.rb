@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class RemoveMoreWrongAttributes < ActiveRecord::Migration[4.2]
   def change
     remove_column :people, :employees

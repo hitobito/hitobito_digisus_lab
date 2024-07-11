@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::TopLayerParldigis < Group::Parldigis
-
   children Group::TopLayerParldigis
 
   class Parldigi < Role::Parldigi
@@ -19,5 +17,4 @@ class Group::TopLayerParldigis < Group::Parldigis
   end
 
   roles Parldigi, ParldigiMore
-
 end

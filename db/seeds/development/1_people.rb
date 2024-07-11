@@ -5,11 +5,9 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 require Rails.root.join('db', 'seeds', 'support', 'person_seeder')
 
 class DigisusLabPersonSeeder < PersonSeeder
-
   def amount(role_type)
     case role_type.name.demodulize
     when 'Member', 'Participant', 'ActiveMember', 'PassiveMember' then 5
@@ -19,7 +17,6 @@ class DigisusLabPersonSeeder < PersonSeeder
   end
 end
 
-
 puzzlers = ['Andreas Maierhofer',
             'Carlo Beltrame',
             'Matthias Viehweger',
@@ -27,12 +24,11 @@ puzzlers = ['Andreas Maierhofer',
             'Nils Rauch',
             'Pascal Zumkehr',
             'Pascal Simon']
-devs = {'Somebody' => 'some@email.example.com'}
+devs = { 'Somebody' => 'some@email.example.com' }
 
 puzzlers.each do |puz|
   devs[puz] = "#{puz.split.last.downcase}@puzzle.ch"
 end
-
 
 seeder = DigisusLabPersonSeeder.new
 

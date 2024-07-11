@@ -5,10 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::TcbeChMembers < Group
-
-
   class EMailDistribution < Role::EMailDistribution
   end
 
@@ -25,5 +22,4 @@ class Group::TcbeChMembers < Group
   end
 
   roles EMailDistribution, InvoiceContact, MainContact, Mailing, ChapterAdmin
-
 end

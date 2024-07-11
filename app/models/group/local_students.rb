@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::LocalStudents < Group::Students
-
   children Group::LocalStudents
 
   class Student < Role::Student
@@ -15,5 +13,4 @@ class Group::LocalStudents < Group::Students
   end
 
   roles Student
-
 end

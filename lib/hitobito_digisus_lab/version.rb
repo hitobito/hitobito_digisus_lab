@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 module HitobitoDigisusLab
-  VERSION = '2.2.0'
+  VERSION = "2.2.0"
 end

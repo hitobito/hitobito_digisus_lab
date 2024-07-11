@@ -5,14 +5,12 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 module Iwi
   module PeopleController
-
     extend ActiveSupport::Concern
 
     included do
-      self.permitted_attrs += [:title, :salutation, :department, :position]
+      self.permitted_attrs += %i[title salutation department position]
     end
   end
 end

@@ -5,21 +5,18 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::TopLayer < Group
-
   self.layer = true
   self.event_types = [Event, Event::Course]
   self.default_children = [Group::TopLayerBoard, Group::TopLayerOffice, Group::TopLayerContacts]
 
   children Group::TopLayerContacts, Group::Local, Group::TopLayerStudents, Group::TopLayerCourses,
-           Group::TopLayerParldigis, Group::TopLayerOccasions, Group::TopLayerFinalThesis,
-           Group::TopLayerBoard, Group::TopLayerOffice, Group::Region
+    Group::TopLayerParldigis, Group::TopLayerOccasions, Group::TopLayerFinalThesis,
+    Group::TopLayerBoard, Group::TopLayerOffice, Group::Region
 
   class Administrator < Role
-    self.permissions = [:admin, :layer_and_below_full, :finance]
+    self.permissions = %i[admin layer_and_below_full finance]
   end
 
   roles Administrator
-
 end

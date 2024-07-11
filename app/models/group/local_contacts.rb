@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::LocalContacts < Group::Contacts
-
   children Group::LocalContacts, Group::CasModule, Group::Survey
 
   class Contact < Role::Contact
@@ -15,5 +13,4 @@ class Group::LocalContacts < Group::Contacts
   end
 
   roles Contact
-
 end

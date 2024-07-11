@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 module Iwi
   module Export
     module Csv
@@ -19,7 +18,7 @@ module Iwi
 
           def person_attributes_with_title
             person_attributes_without_title +
-              [:title, :salutation, :department, :position]
+              %i[title salutation department position]
           end
         end
       end

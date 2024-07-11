@@ -1,6 +1,4 @@
 #!/usr/bin/env rake
-# encoding: utf-8
-
 #  Copyright (c) 2012-2013, Puzzle ITC GmbH. This file is part of
 #  hitobito_generic and licensed under the Affero General Public License version 3
 #  or later. See the COPYING file at the top-level directory or at
@@ -12,8 +10,8 @@ rescue LoadError
   puts 'You must `gem install bundler` and `bundle install` to run rake tasks'
 end
 
-ENGINE_PATH = File.expand_path('..', __FILE__)
-load File.expand_path('../app_root.rb', __FILE__)
+ENGINE_PATH = File.expand_path(__dir__)
+load File.expand_path('app_root.rb', __dir__)
 
 load 'wagons/wagon_tasks.rake'
 

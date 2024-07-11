@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class AddCompanyDetails < ActiveRecord::Migration[4.2]
   def change
     add_column :people, :employees, :integer
@@ -13,6 +12,5 @@ class AddCompanyDetails < ActiveRecord::Migration[4.2]
     add_column :people, :InvoiceNumber, :string
     add_column :people, :entryDate, :date
     add_column :people, :leavingData, :date
-
   end
 end

@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::Occasions < Group
-
   class Participant < Role::Participant
   end
 
@@ -36,6 +34,5 @@ class Group::Occasions < Group
   end
 
   roles Deregistered, GuestSpeaker, Moderator, NotPresent,
-        Organisator, Speaker, Participant, Sponsor, Eingeladen
-
+    Organisator, Speaker, Participant, Sponsor, Eingeladen
 end

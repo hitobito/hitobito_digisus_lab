@@ -5,9 +5,7 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::CasModule < Group
-
   class Visited2019 < Role::Visited2019
   end
 
@@ -36,7 +34,6 @@ class Group::CasModule < Group
   end
 
   roles Visited2019, Visited2020, Visited2021,
-        Passed2019, Passed2020, Passed2021,
-        NotPassed2019, NotPassed2020, NotPassed2021
-
+    Passed2019, Passed2020, Passed2021,
+    NotPassed2019, NotPassed2020, NotPassed2021
 end

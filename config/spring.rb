@@ -5,5 +5,4 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
-Spring.application_root="../hitobito"
+Spring.application_root = '../hitobito'

@@ -5,14 +5,10 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Group::Committee < Group
-
-
   class Leader < Role::Leader
   end
 
   class Member < Role::Member
   end
-
 end

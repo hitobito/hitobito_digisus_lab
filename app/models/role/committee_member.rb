@@ -5,7 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 class Role::CommitteeMember < Role
-  self.permissions = [:group_and_below_read, :contact_data]
+  self.permissions = %i[group_and_below_read contact_data]
 end

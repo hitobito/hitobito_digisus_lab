@@ -5,8 +5,6 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
-
 Group::TopLayer.seed_once(:parent_id,
-  {name: 'Dachverband',
-   short_name: 'Dachverband'}
-)
+                          { name: 'Dachverband',
+                            short_name: 'Dachverband' })
