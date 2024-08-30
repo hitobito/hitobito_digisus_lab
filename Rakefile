@@ -21,4 +21,15 @@ require 'ci/reporter/rake/rspec' unless Rails.env == 'production'
 
 HitobitoDigisusLab::Wagon.load_tasks
 
-task 'test:prepare' => 'db:test:prepare'
+namespace :db do
+  namespace :test do
+    desc "Prepare test database by running migrations only"
+    task prepare_with_migrations: :environment do
+      Rake::Task["db:test:create"].invoke
+      Rake::Task["db:migrate"].invoke
+    end
+  end
+end
+
+# Redefine test:prepare to use the new task
+# task 'test:prepare' => 'db:test:prepare_with_migrations'
