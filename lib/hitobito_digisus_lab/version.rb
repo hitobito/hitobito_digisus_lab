@@ -6,5 +6,5 @@
 #  https://github.com/hitobito/hitobito_digisus_lab.
 
 module HitobitoDigisusLab
-  VERSION = "2.3.5"
+  VERSION = "2.3.6"
 end
