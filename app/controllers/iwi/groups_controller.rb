@@ -20,12 +20,12 @@ module Iwi
       end
 
       def parent_in_ch_open(group)
-        parent = ::Group.where(id: group.object[:parent_id])
+        parent = ::Group.where(id: group.object[:parent_id]).try(:[], 0)
         parent.try(:[], :type) == "Group::TopLayerChOpenMembers"
       end
 
       def parent_in_tcbe(group)
-        parent = ::Group.where(id: group.object[:parent_id])
+        parent = ::Group.where(id: group.object[:parent_id]).try(:[], 0)
         parent.try(:[], :type) == "Group::TopLayerTcbeChMembers"
       end
 
