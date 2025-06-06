@@ -161,7 +161,7 @@ de:
         department: Amt/Abteilung/Bereich
         position: Funktion/Position
         company_name: Organis.-Name
-        company: Kontakt:Organisation?
+        company: Juristische Person
       group:
         ch_open_member_type: CH Open Mitgliedstyp
         ch_open_member_type_label: CH Open Mitgliedstyp
