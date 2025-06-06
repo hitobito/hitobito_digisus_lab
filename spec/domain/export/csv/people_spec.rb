@@ -16,7 +16,7 @@ require "csv"
 describe "Export::Csv::People" do
   let(:person) { people(:admin) }
   let(:simple_headers) do
-    ["Vorname", "Nachname", "Übername", "Organis.-Name", "Kontakt:Organisation?",
+    ["Vorname", "Nachname", "Übername", "Organis.-Name", "Juristische Person",
       "Haupt-E-Mail", "zusätzliche Adresszeile", "Strasse", "Hausnummer", "Postfach", "PLZ", "Ort", "Land",
       "Hauptebene", "Rollen", "Titel", "Anrede", "Amt/Abteilung/Bereich", "Funktion/Position"]
   end
