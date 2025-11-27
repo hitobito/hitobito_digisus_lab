@@ -1,2 +1,5 @@
 .envrc
 Gemfile.lock
+
+db/schema.rb
+db/schema.rb.diff
