@@ -26,7 +26,7 @@ module HitobitoDigisusLab
       Export::Tabular::People::PeopleAddress.include(Iwi::Export::Csv::People::PeopleAddress)
       Export::Tabular::People::PersonRow.include(Iwi::Export::Csv::People::PersonRow)
 
-      # ::Person::PUBLIC_ATTRS += [:title, :salutation, :department, :position]
+      ::Person::PUBLIC_ATTRS += [:title, :salutation, :department, :position]
       # ::Group::PUBLIC_ATTRS += [:ch_open_member_type, :tcbeMemberType, :tcbeCompanyType]
 
       PersonSerializer.include(Iwi::PersonSerializer)
