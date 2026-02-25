@@ -36,7 +36,7 @@ describe Export::PeopleExportJob do
       lines = file.read.lines
       expect(lines.size).to eq(2)
       expect(lines[0]).to match(/Vorname;Nachname;.*/)
-      expect(lines[0].split(";").count).to match(19)
+      expect(lines[0].split(";").count).to match(32)
     end
   end
 end
