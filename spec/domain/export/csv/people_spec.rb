@@ -13,7 +13,11 @@ describe "Export::Csv::People" do
   let(:simple_headers) do
     ["Vorname", "Nachname", "Übername", "Organis.-Name", "Juristische Person",
       "Haupt-E-Mail", "zusätzliche Adresszeile", "Strasse", "Hausnummer", "Postfach", "PLZ", "Ort", "Land",
-      "Hauptebene", "Rollen", "Titel", "Anrede", "Amt/Abteilung/Bereich", "Funktion/Position"]
+      "Hauptebene", "Rollen", "Titel", "Anrede", "Amt/Abteilung/Bereich", "Funktion/Position",
+      "Weitere E-Mail Privat", "Weitere E-Mail Arbeit", "Weitere E-Mail Vater", "Weitere E-Mail Mutter",
+      "Weitere E-Mail Andere", "Weitere E-Mails Freitext", "Telefonnummer Privat", "Telefonnummer Mobil",
+      "Telefonnummer Arbeit", "Telefonnummer Vater", "Telefonnummer Mutter", "Telefonnummer Fax",
+      "Telefonnummer Andere"]
   end
 
   let(:list) { Person.where(id: person) }
@@ -44,9 +48,10 @@ describe "Export::Csv::People" do
   end
 
   context "export_full" do
+    let(:data) { Export::Tabular::People::PeopleFull.export(:csv, list) }
+
     its(:headers) { should include("Titel") }
     its(:headers) { should include("Anrede") }
-    let(:data) { Export::Tabular::People::PeopleFull.export(:csv, list) }
 
     context "first row" do
       subject { csv[0] }
