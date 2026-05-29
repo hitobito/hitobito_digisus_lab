@@ -8,6 +8,8 @@
 require "spec_helper"
 
 describe Export::PeopleExportJob do
+  include JobObservationSpecHelper
+
   subject do
     Export::PeopleExportJob.new(format, user.id, group.id, {},
       household: household, full: full,
@@ -33,7 +35,7 @@ describe Export::PeopleExportJob do
       subject.enqueue!
       subject.perform
 
-      lines = file.read.lines
+      lines = read_data_from_generated_file(file).lines
       expect(lines.size).to eq(2)
       expect(lines[0]).to match(/Vorname;Nachname;.*/)
       expect(lines[0].split(";").count).to match(32)
