@@ -8,18 +8,19 @@
 require "spec_helper"
 
 describe Export::PeopleExportJob do
+  include JobObservationSpecHelper
+
   subject do
     Export::PeopleExportJob.new(format, user.id, group.id, {},
       household: household, full: full,
-      selection: selection, filename: filename)
+      selection: selection, filename: "people_export")
   end
 
   let(:user) { people(:admin) }
   let(:group) { groups(:ch) }
   let(:household) { false }
   let(:selection) { false }
-  let(:file) { AsyncDownloadFile.from_filename(filename, format) }
-  let(:filename) { AsyncDownloadFile.create_name("people_export", user.id) }
+  let(:file) { subject.job_observation }
 
   before do
     SeedFu.quiet = true
@@ -31,9 +32,10 @@ describe Export::PeopleExportJob do
     let(:full) { false }
 
     it "and saves it" do
+      subject.enqueue!
       subject.perform
 
-      lines = file.read.lines
+      lines = read_data_from_generated_file(file).lines
       expect(lines.size).to eq(2)
       expect(lines[0]).to match(/Vorname;Nachname;.*/)
       expect(lines[0].split(";").count).to match(32)
