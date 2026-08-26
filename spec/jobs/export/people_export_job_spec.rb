@@ -38,7 +38,7 @@ describe Export::PeopleExportJob do
       lines = read_data_from_generated_file(file).lines
       expect(lines.size).to eq(2)
       expect(lines[0]).to match(/Vorname;Nachname;.*/)
-      expect(lines[0].split(";").count).to match(32)
+      expect(lines[0].strip.split(";")).to include("Titel", "Anrede", "Amt/Abteilung/Bereich", "Funktion/Position")
     end
   end
 end
