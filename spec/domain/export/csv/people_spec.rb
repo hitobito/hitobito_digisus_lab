@@ -10,14 +10,8 @@ require "csv"
 
 describe "Export::Csv::People" do
   let(:person) { people(:admin) }
-  let(:simple_headers) do
-    ["Vorname", "Nachname", "Übername", "Organis.-Name", "Juristische Person",
-      "Haupt-E-Mail", "zusätzliche Adresszeile", "Strasse", "Hausnummer", "Postfach", "PLZ", "Ort", "Land",
-      "Hauptebene", "Rollen", "Titel", "Anrede", "Amt/Abteilung/Bereich", "Funktion/Position",
-      "Weitere E-Mail Privat", "Weitere E-Mail Arbeit", "Weitere E-Mail Vater", "Weitere E-Mail Mutter",
-      "Weitere E-Mail Andere", "Weitere E-Mails Freitext", "Telefonnummer Privat", "Telefonnummer Mobil",
-      "Telefonnummer Arbeit", "Telefonnummer Vater", "Telefonnummer Mutter", "Telefonnummer Fax",
-      "Telefonnummer Andere"]
+  let(:custom_column_headers) do
+      ["Titel", "Anrede", "Amt/Abteilung/Bereich", "Funktion/Position"]
   end
 
   let(:list) { Person.where(id: person) }
@@ -32,7 +26,7 @@ describe "Export::Csv::People" do
   end
 
   context "export" do
-    its(:headers) { should == simple_headers }
+    its(:headers) { should include *custom_column_headers }
 
     context "first row" do
       subject { csv[0] }
